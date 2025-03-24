@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- font cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="search-box">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="Enter your loacation">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div class="weather-box">
+                <div class="box">
+                    <div class="info-weather">
+                        <div class="weather">
+                            <img src="images/cloud.png" alt="">
+                            <p class="temperature">0<span>°C</span></p>
+                            <p class="description">----------------</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="weather-details">
+            <!-- humidity -->
+            <div class="humidity">
+                <i class="fa-solid fa-water"></i>
+                <div class="text">
+                    <div class="info-humidity">
+                        <span>0%</span>
+                    </div>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <!-- wind -->
+            <div class="wind">
+                <i class="fa-solid fa-wind"></i>
+                <div class="text">
+                    <div class="info-wind">
+                        <span>0 km/h</span>
+                    </div>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+
+        </div>
+        <!-- more info -->
+        <div class="more-info">
+            <p class="pressure">Pressure : 0 hPa</p>
+            <p class="visibility">Visibility : 0 km</p>
+        </div>
+
+        <!-- not found -->
+        <div class="not-found">
+            <div class="box">
+                <img src="images/404.png" alt="">
+                <p>oops !! Location not found !</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
